@@ -32,35 +32,11 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Optional: Works with USBWakeFixup.kext to enable proper wake from sleep</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-USBW.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>Optional: USB Reset</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>SSDT-RHUB.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Optional: Thunderbolt 4 Support</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-MAPLE-RIDGE-RP05-V2.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Optional: Thunderbolt 4 Support</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-DTGP.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -380,13 +356,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>UTBMap.kext</string>
+                    <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V1.1</string>
+                    <string>V2.2.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string></string>
+                    <string>Contents/MacOS/AirportItlwm</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -416,49 +392,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>itlwm.kext</string>
+                    <string>UTBMap.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.0</string>
+                    <string>V1.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/itlwm</string>
-                    <key>MaxKernel</key>
                     <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>SMCRadeonGPU.kext</string>
-                    <key>Comment</key>
-                    <string>V0.3.3</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCRadeonGPU</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RadeonSensor.kext</string>
-                    <key>Comment</key>
-                    <string>V0.3.3</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RadeonSensor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -558,7 +498,7 @@
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <false/>
+                <true/>
                 <key>LauncherOption</key>
                 <string>Disabled</string>
                 <key>LauncherPath</key>
@@ -597,7 +537,7 @@
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
-                <integer>3</integer>
+                <integer>1</integer>
             </dict>
             <key>Entries</key>
             <array/>
@@ -626,7 +566,7 @@
                 <key>ScanPolicy</key>
                 <integer>0</integer>
                 <key>SecureBootModel</key>
-                <string>j160</string>
+                <string>Default</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -739,9 +679,9 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
-                <true/>
+                <false/>
                 <key>MLB</key>
-                <string></string>
+                <string>F5K107700GUK3F7A8</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -755,9 +695,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string></string>
+                <string>F5KF80ARP7QM</string>
                 <key>SystemUUID</key>
-                <string></string>
+                <string>35575230-4675-4BAB-8D57-AA96B1B048D5</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
